@@ -9,52 +9,49 @@ import {
   IconRouteAltLeft,
   IconTerminal2,
 } from "@tabler/icons-react";
+import { useTranslations } from "next-intl";
 
 export function Features() {
+  const t = useTranslations("Feature");
   const features = [
     {
-      title: "Built for developers",
-      description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+      title: t("title_one"),
+      description: t("description_one"),
       icon: <IconTerminal2 />,
     },
     {
-      title: "Ease of use",
-      description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+      title: t("title_two"),
+      description: t("description_two"),
       icon: <IconEaseInOut />,
     },
     {
-      title: "Pricing like no other",
-      description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+      title: t("title_three"),
+      description: t("description_three"),
       icon: <IconCurrencyDollar />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      title: t("title_four"),
+      description: t("description_four"),
       icon: <IconCloud />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: t("title_five"),
+      description: t("description_five"),
       icon: <IconRouteAltLeft />,
     },
     {
-      title: "24/7 Customer Support",
-      description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+      title: t("title_six"),
+      description: t("description_six"),
       icon: <IconHelp />,
     },
     {
-      title: "Money back guarantee",
-      description:
-        "If you donot like EveryAI, we will convince you to like us.",
+      title: t("title_seven"),
+      description: t("description_seven"),
       icon: <IconAdjustmentsBolt />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: t("title_eight"),
+      description: t("description_eight"),
       icon: <IconHeart />,
     },
   ];

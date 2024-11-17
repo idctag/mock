@@ -16,5 +16,23 @@
   "Hero": {
     "title": "Lorem Ipsum",
     "carousel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur  felis in ligula condimentum bibendum. Donec elit tortor, vehicula et."
+  },
+  "Feature": {
+    "title_one": "Built for developers",
+    "description_one": "Built for engineers, developers, dreamers, thinkers and doers.",
+    "title_two": "Ease of use",
+    "description_two": "It's as easy as using an Apple, and as expensive as buying one.",
+    "title_three": "Pricing like no other",
+    "description_three": "Our prices are best in the market. No cap, no lock, no credit card required.",
+    "title_four": "100% Uptime guarantee",
+    "description_four": "We just cannot be taken down by anyone.",
+    "title_five": "Multi-tenant Architecture",
+    "description_five": "You can simply share passwords instead of buying new seats",
+    "title_six": "24/7 Customer Support",
+    "description_six": "We are available a 100% of the time. Atleast our AI Agents are.",
+    "title_seven": "Money back guarantee",
+    "description_seven": "If you donot like EveryAI, we will convince you to like us.",
+    "title_eight": "And everything else",
+    "description_eight": "I just ran out of copy ideas. Accept my sincere apologies"
   }
 }
