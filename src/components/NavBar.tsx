@@ -20,15 +20,10 @@ import {
 } from "@heroicons/react/24/outline";
 import {
   Bars4Icon,
-  GlobeAmericasIcon,
-  NewspaperIcon,
-  PhoneIcon,
-  RectangleGroupIcon,
   SquaresPlusIcon,
-  SunIcon,
-  TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
+import { useTranslations } from "next-intl";
 
 const navListMenuItems = [
   {
@@ -45,36 +40,6 @@ const navListMenuItems = [
     title: "Blog",
     description: "Find the perfect solution for your needs.",
     icon: Bars4Icon,
-  },
-  {
-    title: "Services",
-    description: "Learn how we can help you achieve your goals.",
-    icon: SunIcon,
-  },
-  {
-    title: "Support",
-    description: "Reach out to us for assistance or inquiries",
-    icon: GlobeAmericasIcon,
-  },
-  {
-    title: "Contact",
-    description: "Find the perfect solution for your needs.",
-    icon: PhoneIcon,
-  },
-  {
-    title: "News",
-    description: "Read insightful articles, tips, and expert opinions.",
-    icon: NewspaperIcon,
-  },
-  {
-    title: "Products",
-    description: "Find the perfect solution for your needs.",
-    icon: RectangleGroupIcon,
-  },
-  {
-    title: "Special Offers",
-    description: "Explore limited-time deals and bundles",
-    icon: TagIcon,
   },
 ];
 
@@ -157,6 +122,7 @@ function NavListMenu() {
 }
 
 function NavList() {
+  const t = useTranslations("Navbar");
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
       <Typography
@@ -166,7 +132,9 @@ function NavList() {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">Home</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4">
+          {t("home")}
+        </ListItem>
       </Typography>
       <Typography
         as="a"
@@ -176,7 +144,7 @@ function NavList() {
         className="font-medium"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4">
-          About Us
+          {t("about_us")}
         </ListItem>
       </Typography>
       <NavListMenu />
@@ -188,7 +156,7 @@ function NavList() {
         className="font-medium"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4">
-          Contact Us
+          {t("contact")}
         </ListItem>
       </Typography>
     </List>
@@ -244,11 +212,6 @@ export function CustomNavbar() {
       </div>
       <Collapse open={openNav}>
         <NavList />
-        <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-          <Button variant="outlined" size="sm" color="blue-gray" fullWidth>
-            Log In
-          </Button>
-        </div>
       </Collapse>
     </Navbar>
   );
