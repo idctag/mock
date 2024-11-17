@@ -2,6 +2,19 @@
   "Navbar": {
     "home": "Home",
     "about_us": "About us",
-    "contact": "Contact"
+    "contact": "Contact",
+    "menu": {
+      "resources": "Resources",
+      "title_one": "Products",
+      "description_one": "Find the perfect solution for your needs.",
+      "title_two": "About Us",
+      "description_two": "Meet and learn about our dedication",
+      "title_three": "Blog",
+      "description_three": "Find the perfect solution for your needs."
+    }
+  },
+  "Hero": {
+    "title": "Lorem Ipsum",
+    "carousel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur  felis in ligula condimentum bibendum. Donec elit tortor, vehicula et."
   }
 }

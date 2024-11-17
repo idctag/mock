@@ -25,25 +25,25 @@ import {
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./LocaleSwitcher";
 
-const navListMenuItems = [
-  {
-    title: "Products",
-    description: "Find the perfect solution for your needs.",
-    icon: SquaresPlusIcon,
-  },
-  {
-    title: "About Us",
-    description: "Meet and learn about our dedication",
-    icon: UserGroupIcon,
-  },
-  {
-    title: "Blog",
-    description: "Find the perfect solution for your needs.",
-    icon: Bars4Icon,
-  },
-];
-
 function NavListMenu() {
+  const t = useTranslations("Navbar.menu");
+  const navListMenuItems = [
+    {
+      title: t("title_one"),
+      description: t("description_one"),
+      icon: SquaresPlusIcon,
+    },
+    {
+      title: t("title_two"),
+      description: t("description_two"),
+      icon: UserGroupIcon,
+    },
+    {
+      title: t("title_three"),
+      description: t("description_three"),
+      icon: Bars4Icon,
+    },
+  ];
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = navListMenuItems.map(
@@ -92,7 +92,7 @@ function NavListMenu() {
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-              Resources
+              {t("resources")}
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${

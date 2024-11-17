@@ -1,15 +1,17 @@
 import { Carousel } from "@/components";
+import { useTranslations } from "next-intl";
 
 const CarouselText = () => {
+  const t = useTranslations("Hero");
   return (
     <Carousel
       prevArrow={({}) => <div hidden></div>}
       nextArrow={({}) => <div hidden></div>}
       autoplay={true}
       loop={true}
-      className="font-semibold"
+      className="font-semibold flex h-auto py-5"
       navigation={({ setActiveIndex, activeIndex, length }) => (
-        <div className="absolute bottom-0 left-2/4 z-50 flex -translate-x-2/4 gap-2">
+        <div className="absolute bottom-0 mt-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
           {new Array(length).fill("").map((_, i) => (
             <span
               key={i}
@@ -22,21 +24,11 @@ const CarouselText = () => {
         </div>
       )}
     >
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-        consectetur felis in ligula condimentum bibendum. Donec elit tortor,
-        vehicula et.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-        consectetur felis in ligula condimentum bibendum. Donec elit tortor,
-        vehicula et.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-        consectetur felis in ligula condimentum bibendum. Donec elit tortor,
-        vehicula et.
-      </p>
+      <p>{t("carousel")}</p>
+      <p>{t("carousel")}</p>
+      <p>{t("carousel")}</p>
+      <p>{t("carousel")}</p>
+      <p>{t("carousel")}</p>
     </Carousel>
   );
 };
