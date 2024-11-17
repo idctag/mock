@@ -22,7 +22,13 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-1/2 flex flex-col items-center">
-          <Image src="/phone.png" alt="" width={500} height={100} />
+          <Image
+            src="/phone.png"
+            alt=""
+            priority={true}
+            width={500}
+            height={500}
+          />
         </div>
       </div>
     </BackgroundLines>

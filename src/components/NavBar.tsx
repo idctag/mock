@@ -4,7 +4,6 @@ import {
   Navbar,
   Collapse,
   Typography,
-  Button,
   IconButton,
   List,
   ListItem,
@@ -24,6 +23,7 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
 import { useTranslations } from "next-intl";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 const navListMenuItems = [
   {
@@ -165,7 +165,6 @@ function NavList() {
 
 export function CustomNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
-
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -193,9 +192,7 @@ export function CustomNavbar() {
           <NavList />
         </div>
         <div className="hidden gap-2 lg:flex">
-          <Button variant="text" size="sm" color="blue-gray">
-            English
-          </Button>
+          <LocaleSwitcher />
         </div>
         <IconButton
           variant="text"
