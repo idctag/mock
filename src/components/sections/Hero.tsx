@@ -10,12 +10,14 @@ import { useTranslations } from "next-intl";
 const Hero = () => {
   const t = useTranslations("Hero");
   return (
-    <BackgroundLines className="flex items-center justify-center z-0">
-      <div className="flex flex-col max-w-screen-2xl lg:flex-row z-10">
+    <BackgroundLines className="flex flex-col md:flex-row items-center justify-center z-0">
+      <div className="flex flex-col items-center max-w-screen-2xl lg:flex-row z-10">
         {/* LEFT */}
-        <div className="w-1/2 flex flex-col justify-center">
-          <div className="flex flex-col gap-4 max-w-[80%] self-end">
-            <Typography variant="h1">{t("title")}</Typography>
+        <div className="w-[90vw] md:w-1/2 flex flex-col justify-center">
+          <div className="flex flex-col gap-24 md:gap-6 w-full md:max-w-[80%] self-end">
+            <Typography variant="h1" className="text-center md:text-start">
+              {t("title")}
+            </Typography>
             <CarouselText />
             <div className="flex gap-4 justify-center">
               <CustomButton text="Download" Icon={FaApple} />
@@ -24,8 +26,8 @@ const Hero = () => {
           </div>
         </div>
         {/* RIGHT */}
-        <div className="w-1/2">
-          <Image src="/phone.png" alt="" width={500} height={500} />
+        <div className="w-1/2 hidden md:flex">
+          <Image src="/phone.png" priority alt="" width={500} height={500} />
         </div>
       </div>
     </BackgroundLines>

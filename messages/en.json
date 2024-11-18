@@ -34,5 +34,28 @@
     "description_seven": "If you donot like EveryAI, we will convince you to like us.",
     "title_eight": "And everything else",
     "description_eight": "I just ran out of copy ideas. Accept my sincere apologies"
+  },
+  "Footer": {
+    "title_one": "Product",
+    "items_one": {
+      "one": "Overview",
+      "two": "Features",
+      "three": "Solutions",
+      "four": "Tutorials"
+    },
+    "title_two": "Company",
+    "items_two": {
+      "one": "About us",
+      "two": "Careers",
+      "three": "Press",
+      "four": "News"
+    },
+    "title_three": "Resource",
+    "items_three": {
+      "one": "Blog",
+      "two": "Newsletter",
+      "three": "Events",
+      "four": "Help center"
+    }
   }
 }
