@@ -57,5 +57,21 @@
       "three": "Events",
       "four": "Help center"
     }
+  },
+  "Bento": {
+    "title_one": "The Dawn of Innovation",
+    "description_one": "Explore the birth of groundbreaking ideas and inventions.",
+    "title_two": "The Digital Revolution",
+    "description_two": "Dive into the transformative power of technology.",
+    "title_three": "The Art of Design",
+    "description_three": "Discover the beauty of thoughtful and functional design.",
+    "title_four": "The Power of Communication",
+    "description_four": "Understand the impact of effective communication in our lives.",
+    "title_five": "Contextual Suggestions",
+    "description_five": "Get AI-powered suggestions based on your writing context."
+  },
+  "LogoTicker": {
+    "title_one": "Partner Companies",
+    "title_two": "Sponsors"
   }
 }
