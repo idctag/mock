@@ -7,8 +7,8 @@ import { Testimonials } from "@/components/sections/Testimonials";
 
 export default function Home() {
   return (
-    <div className="w-full flex justify-center">
-      <div className="w-full max-w-screen-2xl flex flex-col gap-24">
+    <div className="w-screen flex justify-center">
+      <div className="w-full flex-col gap-24">
         <Hero />
         <Features />
         <LogoTicker />

@@ -31,7 +31,7 @@ export default function LogoTicker() {
   return (
     <div>
       <section className="overflow-x-clip py-24">
-        <Typography variant="h3" className="container text-center">
+        <Typography variant="h3" className="text-center">
           {t("title_one")}
         </Typography>
         <div className="overflow-hidden mt-12 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
@@ -46,7 +46,7 @@ export default function LogoTicker() {
         </div>
       </section>
       <section className="overflow-x-clip py-24">
-        <Typography variant="h3" className="container text-center">
+        <Typography variant="h3" className="text-center">
           {t("title_two")}
         </Typography>
         <div className="overflow-hidden mt-12 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">

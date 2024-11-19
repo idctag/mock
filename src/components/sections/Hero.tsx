@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
         </div>
         {/* RIGHT */}
-        <div className="w-1/2 hidden md:flex">
+        <div className="w-1/2 hidden md:flex justify-center">
           <Image src="/phone.png" priority alt="" width={500} height={500} />
         </div>
       </div>
