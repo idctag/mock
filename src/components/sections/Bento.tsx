@@ -49,7 +49,7 @@ export function Bento() {
     },
   ];
   return (
-    <BentoGrid className="max-w-screen-2xl mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className="max-w-screen-2xl mx-auto md:auto-rows-[20rem] my-20">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}

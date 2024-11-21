@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { TbSmartHome } from "react-icons/tb";
 import {
   Navbar,
   Typography,
@@ -8,6 +9,32 @@ import {
 } from "@material-tailwind/react";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { IconType } from "react-icons";
+
+const NavLink = ({
+  title,
+  Icon,
+  href,
+}: {
+  href: string;
+  title: string;
+  Icon: IconType;
+}) => {
+  return (
+    <Typography
+      as="li"
+      variant="small"
+      color="blue-gray"
+      className="p-1 font-normal hover:text-third"
+    >
+      <Link href={href} className="flex items-center gap-2">
+        <Icon size={20} />
+        {title}
+      </Link>
+    </Typography>
+  );
+};
 
 export function CustomNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -22,46 +49,7 @@ export function CustomNavbar() {
 
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <a href="#" className="flex items-center">
-          {t("home")}
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <a href="#" className="flex items-center">
-          {t("about_us")}
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <a href="#" className="flex items-center">
-          {t("contact")}
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <a href="#" className="flex items-center">
-          Docs
-        </a>
-      </Typography>
+      <NavLink href="#" title={t("home")} Icon={TbSmartHome} />
     </ul>
   );
 

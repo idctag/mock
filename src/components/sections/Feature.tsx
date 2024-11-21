@@ -11,7 +11,7 @@ import {
 } from "@tabler/icons-react";
 import { useTranslations } from "next-intl";
 
-export function Features() {
+export function Features({ className }: { className?: string }) {
   const t = useTranslations("Feature");
   const features = [
     {
@@ -56,7 +56,12 @@ export function Features() {
     },
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
+    <div
+      className={cn(
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto",
+        className,
+      )}
+    >
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}

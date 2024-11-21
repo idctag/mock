@@ -39,7 +39,7 @@ export function Footer() {
     },
   ];
   return (
-    <footer className="relative w-full">
+    <footer className="relative w-full bg-secondary text-white py-10">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <div className="flex flex-col gap-4">
@@ -47,16 +47,32 @@ export function Footer() {
               Company Name
             </Typography>
             <div className="flex gap-3">
-              <IconButton variant="outlined" className="rounded-full">
+              <IconButton
+                variant="outlined"
+                color="white"
+                className="rounded-full"
+              >
                 <FaInstagramSquare size={20} />
               </IconButton>
-              <IconButton variant="outlined" className="rounded-full">
+              <IconButton
+                variant="outlined"
+                color="white"
+                className="rounded-full"
+              >
                 <FaFacebook size={20} />
               </IconButton>
-              <IconButton variant="outlined" className="rounded-full">
+              <IconButton
+                variant="outlined"
+                color="white"
+                className="rounded-full"
+              >
                 <FaXTwitter size={20} />
               </IconButton>
-              <IconButton variant="outlined" className="rounded-full">
+              <IconButton
+                variant="outlined"
+                color="white"
+                className="rounded-full"
+              >
                 <FaYoutube size={20} />
               </IconButton>
             </div>
@@ -76,7 +92,7 @@ export function Footer() {
               <ul key={title}>
                 <Typography
                   variant="h6"
-                  color="blue-gray"
+                  color="white"
                   className="mb-3 font-medium"
                 >
                   {title}
@@ -86,7 +102,7 @@ export function Footer() {
                     <Typography
                       as="a"
                       href="#"
-                      color="gray"
+                      color="white"
                       className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
                     >
                       {link}
@@ -100,7 +116,7 @@ export function Footer() {
         <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4">
           <Typography
             variant="small"
-            className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
+            className="mb-4 text-center font-normal text-gray-500 md:mb-0"
           >
             &copy; {currentYear} <a href="">Company Name</a>. All Rights
             Reserved.
