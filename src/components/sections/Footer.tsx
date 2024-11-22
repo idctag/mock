@@ -39,7 +39,7 @@ export function Footer() {
     },
   ];
   return (
-    <footer className="relative w-full bg-secondary text-white py-10">
+    <footer className="relative w-full py-10">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <div className="flex flex-col gap-4">
@@ -47,32 +47,16 @@ export function Footer() {
               Company Name
             </Typography>
             <div className="flex gap-3">
-              <IconButton
-                variant="outlined"
-                color="white"
-                className="rounded-full"
-              >
+              <IconButton variant="outlined" className="rounded-full">
                 <FaInstagramSquare size={20} />
               </IconButton>
-              <IconButton
-                variant="outlined"
-                color="white"
-                className="rounded-full"
-              >
+              <IconButton variant="outlined" className="rounded-full">
                 <FaFacebook size={20} />
               </IconButton>
-              <IconButton
-                variant="outlined"
-                color="white"
-                className="rounded-full"
-              >
+              <IconButton variant="outlined" className="rounded-full">
                 <FaXTwitter size={20} />
               </IconButton>
-              <IconButton
-                variant="outlined"
-                color="white"
-                className="rounded-full"
-              >
+              <IconButton variant="outlined" className="rounded-full">
                 <FaYoutube size={20} />
               </IconButton>
             </div>
@@ -102,7 +86,6 @@ export function Footer() {
                     <Typography
                       as="a"
                       href="#"
-                      color="white"
                       className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
                     >
                       {link}

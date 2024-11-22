@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { Typography } from "@material-tailwind/react";
 
 type Tab = {
   title: string;
@@ -41,7 +40,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
+          "flex flex-row items-center justify-end [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
           containerClassName,
         )}
       >
@@ -69,21 +68,18 @@ export const Tabs = ({
               />
             )}
 
-            <span className="relative block text-black dark:text-white">
+            <span className="relative self-end block text-black dark:text-white">
               {tab.title}
             </span>
           </button>
         ))}
-        <Typography variant="h3" className="w-full text-end">
-          Our members
-        </Typography>
       </div>
       <FadeInDiv
         tabs={tabs}
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("mt-20", contentClassName)}
+        className={cn("mt-10", contentClassName)}
       />
     </>
   );

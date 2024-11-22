@@ -1,5 +1,6 @@
 "use client";
 
+import { Typography } from "@material-tailwind/react";
 import { Tabs } from "../ui/tabs";
 import { cn } from "@/lib/utils";
 
@@ -37,8 +38,22 @@ export function Members() {
   ];
 
   return (
-    <div className="md:h-[40rem] [perspective:1200px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-20">
-      <Tabs tabs={tabs} />
+    <div className="px-12 flex items-center justify-center">
+      <div className="flex max-w-screen-2xl">
+        <div className="w-2/6 flex gap-4 flex-col justify-center">
+          <Typography variant="h6">Meet the Team</Typography>
+          <Typography variant="h3">The Heart of Our Excellence</Typography>
+          <Typography>
+            {`This section celebrates the unique stories, skills, and passions of
+          our team members. From the strategic thinkers to the creative
+          innovators, each person contributes to the vibrant culture and
+          remarkable service w're known for.`}
+          </Typography>
+        </div>
+        <div className="md:h-[40rem] [perspective:1200px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-20">
+          <Tabs tabs={tabs} />
+        </div>
+      </div>
     </div>
   );
 }

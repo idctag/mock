@@ -26,7 +26,7 @@ const NavLink = ({
       as="li"
       variant="small"
       color="blue-gray"
-      className="p-1 font-normal hover:text-third"
+      className="p-1 font-normal hover:text-blue-800"
     >
       <Link href={href} className="flex items-center gap-2">
         <Icon size={20} />

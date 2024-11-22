@@ -1,7 +1,7 @@
+import { Features } from "@/components/sections/Feature";
 import { Footer } from "@/components/sections/Footer";
 import Hero from "@/components/sections/Hero";
 import Introduction from "@/components/sections/Introduction";
-import LogoTicker from "@/components/sections/LogoTicker";
 import { Members } from "@/components/sections/Members";
 import Story from "@/components/sections/Story";
 
@@ -11,8 +11,8 @@ export default function Home() {
       <Hero />
       <Story />
       <Introduction />
-      <LogoTicker />
       <Members />
+      <Features />
       <Footer />
     </div>
   );
