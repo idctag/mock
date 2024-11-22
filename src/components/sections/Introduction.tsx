@@ -8,12 +8,15 @@ const Introduction = () => {
       <div className="max-w-screen-2xl text-center">
         <div className="flex items-center">
           <Image src={"/image1.jpeg"} alt="" height={700} width={700} />
-          <Typography className="text-2xl font-semibold">
-            Суралцагч бүртэй тулж ажиллан тэдэнд англи хэл дурлаж суралцах арга
-            барилыг бий болгон үүгээрээ эцэг эхчүүдэд одоо оруулсан хөрөнгө
-            оруулалтаас нь илүү ирээдүйн боловсролын өгөөж, үр дүнг тэдэнд
-            хүргэх.
-          </Typography>
+          <div className="flex flex-col gap-4">
+            <Typography variant="h2">Сурагчдын сурах боломж</Typography>
+            <Typography className="text-xl">
+              Суралцагч бүртэй тулж ажиллан тэдэнд англи хэл дурлах суралцах
+              арга барилыг бий болгон үгээрээ эцэг эхчүүдэд одоо оруулсан
+              хөрөнгө оруулалтаас нь илүү ирээдүйн боловсролын өгөөж, үр дүнг
+              тэдэнд хүргэх.
+            </Typography>
+          </div>
         </div>
       </div>
     </div>

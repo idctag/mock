@@ -3,7 +3,7 @@ import { Footer } from "@/components/sections/Footer";
 import Hero from "@/components/sections/Hero";
 import Introduction from "@/components/sections/Introduction";
 import { Members } from "@/components/sections/Members";
-import Story from "@/components/sections/Story";
+import { Story } from "@/components/sections/Story";
 
 export default function Home() {
   return (
