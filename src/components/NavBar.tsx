@@ -51,7 +51,7 @@ export function CustomNavbar() {
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <NavLink href="#" title={t("home")} Icon={TbSmartHome} />
-      <NavLink href="#" title={t("about_us")} Icon={GrGroup} />
+      <NavLink href="#about" title={t("about_us")} Icon={GrGroup} />
       <NavLink href="#" title={t("contact")} Icon={FiPhoneCall} />
     </ul>
   );

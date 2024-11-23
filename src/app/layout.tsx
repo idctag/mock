@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { CustomNavbar } from "@/components/NavBar";
 import { getLocale, getMessages } from "next-intl/server";
+import { Footer } from "@/components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -36,6 +37,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <CustomNavbar />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

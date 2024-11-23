@@ -2,76 +2,48 @@
   "Navbar": {
     "home": "Home",
     "about_us": "About us",
-    "contact": "Contact",
-    "menu": {
-      "resources": "Resources",
-      "title_one": "Products",
-      "description_one": "Find the perfect solution for your needs.",
-      "title_two": "About Us",
-      "description_two": "Meet and learn about our dedication",
-      "title_three": "Blog",
-      "description_three": "Find the perfect solution for your needs."
-    }
+    "contact": "Contact"
   },
   "Hero": {
-    "title": "Lorem Ipsum",
-    "carousel": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur  felis in ligula condimentum bibendum. Donec elit tortor, vehicula et."
+    "title": "Unlock Your Child's Potential with Expert English Tutoring!",
+    "description": "Tailored lessons to boost confidence and language skills ",
+    "contact": "Contact Us",
+    "many": "And many others",
+    "trust": "Trusted by over",
+    "parent": "Parents"
   },
-  "Feature": {
-    "title_one": "Built for developers",
-    "description_one": "Built for engineers, developers, dreamers, thinkers and doers.",
-    "title_two": "Ease of use",
-    "description_two": "It's as easy as using an Apple, and as expensive as buying one.",
-    "title_three": "Pricing like no other",
-    "description_three": "Our prices are best in the market. No cap, no lock, no credit card required.",
-    "title_four": "100% Uptime guarantee",
-    "description_four": "We just cannot be taken down by anyone.",
-    "title_five": "Multi-tenant Architecture",
-    "description_five": "You can simply share passwords instead of buying new seats",
-    "title_six": "24/7 Customer Support",
-    "description_six": "We are available a 100% of the time. Atleast our AI Agents are.",
-    "title_seven": "Money back guarantee",
-    "description_seven": "If you donot like EveryAI, we will convince you to like us.",
-    "title_eight": "And everything else",
-    "description_eight": "I just ran out of copy ideas. Accept my sincere apologies"
+  "Features": {
+    "read": "Read More",
+    "title_1": "Relaxing and Learning",
+    "description_1": "There are several sections available in different vesrions, but most of the have fun.",
+    "title_2": "Certificate",
+    "description_2": "We are constantly improving the material for the lessons we want to pass on to others.",
+    "title_3": "Private Mentoring",
+    "description_3": "All of our specialists in special education have the best educational degrees.",
+    "title_4": "Creative Thinking",
+    "description_4": "All of our specialists in special education have the best educational degrees.",
+    "how": "HOW IT WORKS",
+    "tutor": "How is Our Tutoring",
+    "service": "Service"
   },
-  "Footer": {
-    "title_one": "Product",
-    "items_one": {
-      "one": "Overview",
-      "two": "Features",
-      "three": "Solutions",
-      "four": "Tutorials"
-    },
-    "title_two": "Company",
-    "items_two": {
-      "one": "About us",
-      "two": "Careers",
-      "three": "Press",
-      "four": "News"
-    },
-    "title_three": "Resource",
-    "items_three": {
-      "one": "Blog",
-      "two": "Newsletter",
-      "three": "Events",
-      "four": "Help center"
-    }
+  "Learning": {
+    "title": "LEARNING METHODS",
+    "sub_title": "Access to learning anytime and anywhere",
+    "description": "Make it easier for all students to lean through digital media with existing media making it easier for students to learn anywhere anytime",
+    "world": "World Class",
+    "flexible": "Flexible",
+    "affordable": "Affordable",
+    "easy": "Easy Learning"
   },
-  "Bento": {
-    "title_one": "The Dawn of Innovation",
-    "description_one": "Explore the birth of groundbreaking ideas and inventions.",
-    "title_two": "The Digital Revolution",
-    "description_two": "Dive into the transformative power of technology.",
-    "title_three": "The Art of Design",
-    "description_three": "Discover the beauty of thoughtful and functional design.",
-    "title_four": "The Power of Communication",
-    "description_four": "Understand the impact of effective communication in our lives.",
-    "title_five": "Contextual Suggestions",
-    "description_five": "Get AI-powered suggestions based on your writing context."
-  },
-  "LogoTicker": {
-    "title_one": "Partner Companies",
-    "title_two": "Sponsors"
+  "About": {
+    "title": "A Decade of Excellence in Language Training and Educational Placement",
+    "item_1": "2009",
+    "sub_1": "Kunz LLC established for recruiting students to China.",
+    "item_2": "2013",
+    "sub_2": "Kunz Education Center for Chinese training and placements.",
+    "item_3": "2018",
+    "sub_3": "Kunz School for Chinese and English training; Kim Education Center for Korean education.",
+    "years": "10+ years of experience",
+    "students": "10,000+ students empowered."
   }
 }
