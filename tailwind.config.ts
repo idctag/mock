@@ -2,26 +2,27 @@ import type { Config } from "tailwindcss";
 import withMT from "@material-tailwind/react/utils/withMT";
 import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
 import svgToDataUri from "mini-svg-data-uri";
+import color from "tailwindcss/colors";
 
 export default withMT({
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     fontFamily: {
-      sans: ["poppins", "system-ui"],
+      sans: ["Poppins", "sans-serif"],
       roboto: ["Roboto", "sans-serif"],
+      arvo: ["Arvo", "sans-serif"],
+    },
+    colors: {
+      ...color,
+      rose: color.rose,
+      background: "#f8fafc",
+      foreground: "",
     },
     extend: {
-      colors: {
-        primary: "#132043",
-        secondary: "#1F4172",
-        third: "#F1B4BB",
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",

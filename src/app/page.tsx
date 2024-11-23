@@ -1,19 +1,13 @@
-import { Features } from "@/components/sections/Feature";
-import { Footer } from "@/components/sections/Footer";
+import Features from "@/components/sections/Features";
 import Hero from "@/components/sections/Hero";
-import Introduction from "@/components/sections/Introduction";
-import { Members } from "@/components/sections/Members";
-import { Story } from "@/components/sections/Story";
+import LearningMethods from "@/components/sections/LearningMethods";
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col justify-center">
+    <div className="w-full flex flex-col justify-center items-center font-poppins gap-10">
       <Hero />
-      <Story />
-      <Introduction />
-      <Members />
       <Features />
-      <Footer />
+      <LearningMethods />
     </div>
   );
 }

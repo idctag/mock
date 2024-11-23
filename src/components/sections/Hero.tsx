@@ -1,33 +1,81 @@
 "use client";
+
+import { Button, Typography } from "@material-tailwind/react";
 import Image from "next/image";
-import { BackgroundLines } from "../ui/backgorund-line";
-import { HeroHighlight, Highlight } from "../ui/text-highlight";
-import { Typography } from "@material-tailwind/react";
+
 const Hero = () => {
-  // const t = useTranslations("Hero");
   return (
-    <BackgroundLines className="flex flex-col md:flex-row items-center justify-center z-0">
-      <div className="flex flex-col items-center max-w-screen-2xl lg:flex-row z-10">
-        {/* LEFT */}
-        <div className="w-full md:w-1/2 flex flex-col justify-center">
-          <div className="flex flex-col gap-24 md:gap-6 w-full self-end">
-            <HeroHighlight className="grid gap-12">
-              <Typography variant="h1">
-                {`Unlock Your Child's Potential with Expert English Tutoring!`}
-              </Typography>
-              <Typography variant="h3">
-                {`Tailored lessons to boost confidence, language skills, and `}
-                <Highlight>academic success!</Highlight>
-              </Typography>
-            </HeroHighlight>
+    <div className="flex flex-col w-full justify-center md:px-6 md:pt-2">
+      <div className="bg-gradient-to-r from-amber-300 to-amber-500 w-full h-[72vh] md:h-[65vh] md:rounded-t-[4rem] flex items-center flex-col text-center md:text-start justify-evenly md:flex-row md:p-5">
+        <div className="md:w-3/5 flex justify-center">
+          <div className="flex flex-col gap-4 max-w-[500]">
+            <Typography className="font-poppins font-semibold text-4xl md:text-6xl ">
+              {`Unlock Your Child's Potential with Expert English Tutoring!`}
+            </Typography>
+            <Typography className="font-poppins text-xl text-gray-600">
+              {`Tailored lessons to boost confidence and language skills `}
+            </Typography>
+            <div>
+              <Button variant="gradient" className="px-10">
+                Contact Us
+              </Button>
+            </div>
           </div>
         </div>
-        {/* RIGHT */}
-        <div className="w-1/2 hidden md:flex justify-center">
-          <Image src="/hero.svg" priority alt="" width={800} height={800} />
+        <div className="flex">
+          <Image src="/learn3.svg" width={500} height={500} alt="" />
         </div>
       </div>
-    </BackgroundLines>
+      <div className="flex flex-col py-4 gap-8 h-[25vh] w-full bg-gradient-to-r from-black to-black/80 md:rounded-b-[3rem] text-white items-center justify-center">
+        <div className="text-center gap-4 flex flex-col">
+          <Typography className="md:text-3xl text-xl font-medium tracking-wider">
+            Trusted by over{" "}
+            <span className="font-bold text-2xl md:text-4xl">1,000+ </span>
+            Parents
+          </Typography>
+          <Typography className="md:text-3xl text-xl font-medium tracking-wider">
+            And many others
+          </Typography>
+        </div>
+        <div className="flex gap-8 md:gap-20">
+          <Image
+            src="/messenger.svg"
+            alt=""
+            width={50}
+            height={50}
+            className="size-8 md:size-12"
+          />
+          <Image
+            src="/facebook.svg"
+            alt=""
+            width={50}
+            height={50}
+            className="size-8 md:size-12"
+          />
+          <Image
+            src="/elephant.svg"
+            alt=""
+            width={50}
+            height={50}
+            className="size-8 md:size-12"
+          />
+          <Image
+            src="/reddit.svg"
+            alt=""
+            width={50}
+            height={50}
+            className="size-8 md:size-12"
+          />
+          <Image
+            src="/cube.svg"
+            alt=""
+            width={50}
+            height={50}
+            className="size-8 md:size-12"
+          />
+        </div>
+      </div>
+    </div>
   );
 };
 

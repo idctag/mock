@@ -9,9 +9,10 @@ import {
 } from "@material-tailwind/react";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { useTranslations } from "next-intl";
+import { GrGroup } from "react-icons/gr";
 import Link from "next/link";
 import { IconType } from "react-icons";
-
+import { FiPhoneCall } from "react-icons/fi";
 const NavLink = ({
   title,
   Icon,
@@ -50,6 +51,8 @@ export function CustomNavbar() {
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <NavLink href="#" title={t("home")} Icon={TbSmartHome} />
+      <NavLink href="#" title={t("about_us")} Icon={GrGroup} />
+      <NavLink href="#" title={t("contact")} Icon={FiPhoneCall} />
     </ul>
   );
 

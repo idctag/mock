@@ -31,7 +31,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col items-center`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background`}
       >
         <NextIntlClientProvider messages={messages}>
           <CustomNavbar />
