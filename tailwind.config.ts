@@ -18,31 +18,18 @@ export default withMT({
     },
     colors: {
       ...color,
-      rose: color.rose,
       background: "#f8fafc",
       foreground: "",
     },
     extend: {
       animation: {
-        scroll:
-          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
-        slide: "slide 15s linear infinite",
-        slideReverse: "slideReverse 15s linear infinite",
+        "infinite-scroll": "infinite-scroll 25s linear infinite",
         move: "move 5s linear infinite",
       },
       keyframes: {
-        slide: {
-          from: { transform: "translatex(0)" },
-          to: { transform: "translatex(-50%)" },
-        },
-        slideReverse: {
-          from: { transform: "translatex(-50%)" },
-          to: { transform: "translatex(0)" },
-        },
-        scroll: {
-          to: {
-            transform: "translate(calc(-50% - 0.5rem))",
-          },
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% / 2))" },
         },
         move: {
           "0%": { transform: "translateX(-200px)" },

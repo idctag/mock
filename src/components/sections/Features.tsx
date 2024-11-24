@@ -29,7 +29,7 @@ const Section = ({
     </div>
   );
 };
-const Feature = () => {
+const Features = () => {
   const sectionStyle =
     "flex flex-col md:flex-row max-w-screen-2xl w-full justify-evenly h-full md:h-[40vh] items-center md:snap-center";
   return (
@@ -65,4 +65,4 @@ const Feature = () => {
   );
 };
 
-export default Feature;
+export default Features;
