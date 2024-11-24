@@ -19,7 +19,7 @@ const Section = ({
       <div className="flex flex-col gap-4">
         <p className={cn(`text-${color} text-7xl`)}>{num}</p>
         <p className="text-4xl font-medium">{title}</p>
-        <div className="flex md:flex-col">
+        <div className="flex md:flex-col gap-8">
           <p className="text-gray-500">{sub}</p>
           <Button variant="outlined" className="md:w-[30%] rounded-[5rem]">
             Learn More
