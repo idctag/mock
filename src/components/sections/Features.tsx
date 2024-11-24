@@ -72,7 +72,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="box max-w-screen-2xl snap-center w-full h-full md:h-screen justify-center gap-24 flex flex-col my-10">
+    <div className="box max-w-screen-2xl md:snap-center w-full h-full md:h-[80vh] justify-center gap-24 flex flex-col mb-14">
       <div className="w-full text-center">
         <Typography className="font-semibold text-pink-400 tracking-widest">
           {t("how")}

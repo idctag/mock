@@ -7,9 +7,9 @@ import Image from "next/image";
 const Hero = () => {
   const t = useTranslations("Hero");
   return (
-    <div className="flex flex-col w-full justify-center md:px-6 md:pt-2 snap-end">
-      <div className="bg-gradient-to-r to-sky-600 from-sky-500 w-full h-[72vh] md:h-[65vh] md:rounded-t-[4rem] flex items-center flex-col text-center md:text-start justify-evenly md:flex-row md:p-5">
-        <div className="md:w-3/5 text-white flex justify-center">
+    <div className="flex flex-col w-full justify-center md:px-6 md:pt-2 md:snap-end">
+      <div className="bg-gradient-to-r to-blue-300 from-blue-200 w-full h-[72vh] md:h-[65vh] md:rounded-t-[4rem] flex items-center flex-col text-center md:text-start justify-evenly md:flex-row md:p-5">
+        <div className="md:w-3/5 flex justify-center">
           <div className="flex flex-col gap-4 max-w-[500]">
             <Typography className="font-poppins font-semibold text-4xl md:text-6xl ">
               {t("title")}

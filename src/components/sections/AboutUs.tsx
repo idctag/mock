@@ -1,62 +1,47 @@
 "use client";
-import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
-import { IconType } from "react-icons";
-import { LiaSchoolSolid } from "react-icons/lia";
-import { FaDoorOpen } from "react-icons/fa";
-import { RiEarthLine } from "react-icons/ri";
-import { useTranslations } from "next-intl";
 
-const Item = ({
-  title,
-  sub,
-  Icon,
-}: {
-  title: string;
-  sub: string;
-  Icon: IconType;
-}) => {
+const Stats = ({ title, sub }: { title: string; sub: string }) => {
   return (
-    <div className="text-white flex flex-col bg-cyan-700 p-8 md:rounded-[2rem] gap-12 w-full md:w-2/3">
-      <Typography className="text-xl font-medium">{sub}</Typography>
-      <div className="flex justify-between">
-        <Typography className="text-lg text-gray-300">{title}</Typography>
-        <Icon size={30} />
-      </div>
+    <div className="flex flex-col gap-4 px-3">
+      <p className="text-3xl md:text-4xl font-semibold ">{title}</p>
+      <p className="text-gray-500">{sub}</p>
     </div>
   );
 };
 
 const AboutUs = () => {
-  const t = useTranslations("About");
   return (
     <div
       id="about"
-      className="h-full md:snap-center md:h-[80vh] bg-gradient-to-l from-cyan-800 to-cyan-700 justify-center flex w-full"
+      className="h-full md:snap-center md:h-[80vh] justify-center mb-44 flex w-full"
     >
-      <div className="max-w-screen-2xl flex flex-col-reverse md:flex-row justify-between ">
-        <div className="h-full flex flex-col-reverse gap-4 w-full md:w-1/2">
+      <div className="max-w-screen-2xl flex flex-col-reverse md:flex-row w-full justify-between ">
+        <div className="h-full flex items-center justify-center gap-4 md:rounded-l-[2rem] bg-blue-200 w-full md:w-1/2">
           <Image
             priority
             src="/point.png"
-            className="self-center"
+            className="self-end"
             alt=""
             width={400}
             height={600}
           />
-          <div className="text-white flex justify-between w-full">
-            <Typography className="text-2xl font-semibold">
-              {t("years")}
-            </Typography>
-            <Typography className="text-2xl font-semibold">
-              {t("students")}
-            </Typography>
-          </div>
         </div>
-        <div className="flex flex-col items-center h-full justify-evenly w-full gap-4 md:w-1/2 ">
-          <Item title={t("item_1")} sub={t("sub_1")} Icon={FaDoorOpen} />
-          <Item title={t("item_2")} sub={t("sub_2")} Icon={LiaSchoolSolid} />
-          <Item title={t("item_3")} sub={t("sub_3")} Icon={RiEarthLine} />
+        <div className="flex flex-col gap-12 h-full bg-amber-200 p-4 md:p-10 md:rounded-r-[2rem] justify-center">
+          <div className="flex flex-col gap-4">
+            <p className="text-7xl">Guided daily</p>
+            <p className="text-2xl text-gray-500">
+              Designed by teachers passionate about sharing knowledge with
+              amazing kdis
+            </p>
+          </div>
+          <div className="flex justify-evenly">
+            <Stats title="10,000+" sub="Students empovered" />
+            <div className="border-l-gray-300 border-r-gray-300 border-y-0 border md:px-8">
+              <Stats title="50+" sub="Fun Activities" />
+            </div>
+            <Stats title="10+" sub="Years of experience" />
+          </div>
         </div>
       </div>
     </div>
