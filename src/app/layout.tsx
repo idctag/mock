@@ -30,7 +30,11 @@ export default async function RootLayout({
   const locale = await getLocale();
   const messages = await getMessages();
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html
+      lang={locale}
+      suppressHydrationWarning
+      className="snap-y snap-proximity"
+    >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background`}
       >
