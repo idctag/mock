@@ -2,14 +2,6 @@
 
 import Image from "next/image";
 
-const Card = ({ src }: { src: string }) => {
-  return (
-    <div className="flex-shrink-0 flex">
-      <Image src={src} alt="" height={150} width={150} />
-    </div>
-  );
-};
-
 const LogoTicker = () => {
   const logos = [
     { src: "/brand/logo1.svg" },
@@ -18,16 +10,35 @@ const LogoTicker = () => {
     { src: "/brand/logo4.svg" },
     { src: "/brand/logo5.svg" },
   ];
-  const data = [...logos, ...logos, ...logos, ...logos];
+
+  // [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]
+  const ticker_style = "flex gap-36 flex-shrink-0 animate-infinite-scroll";
 
   return (
-    <div className="md:h-[40vh] snap-center max-w-screen-2xl overflow-hidden">
-      <div className="relative overflow-x-hidden mt-12 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-        <div className="animate-infinite-scroll flex gap-36 pr-36">
-          {data.map((logo, idx) => (
-            <Card key={idx} src={logo.src} />
-          ))}
-        </div>
+    <div className="md:h-[40vh] flex flex-nowrap gap-36 max-w-screen-2xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+      <div className={ticker_style}>
+        {logos.map((logo, idx) => (
+          <Image
+            priority
+            key={idx}
+            src={logo.src}
+            alt=""
+            height={150}
+            width={150}
+          />
+        ))}
+      </div>
+      <div className={ticker_style}>
+        {logos.map((logo, idx) => (
+          <Image
+            priority
+            key={`2${idx}`}
+            src={logo.src}
+            alt=""
+            height={150}
+            width={150}
+          />
+        ))}
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ export default withMT({
       keyframes: {
         "infinite-scroll": {
           from: { transform: "translateX(0)" },
-          to: { transform: "translateX(calc(-100% / 2))" },
+          to: { transform: "translateX(calc(-100% - 144px))" },
         },
         move: {
           "0%": { transform: "translateX(-200px)" },
