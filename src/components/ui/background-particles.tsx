@@ -14,7 +14,7 @@ const AnimatedBackground: React.FC<AnimatedBackgroundProps> = ({
 
   useEffect(() => {
     const generateParticles = () => {
-      const particleCount = 25;
+      const particleCount = 40;
       const colors = ["#3B82F6", "#10B981", "#F43F5E", "#8B5CF6", "#EC4899"];
 
       const newParticles = Array.from({ length: particleCount }, () => ({
