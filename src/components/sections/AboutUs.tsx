@@ -21,7 +21,7 @@ const AboutUs = () => {
           <Image
             priority
             src="/point.png"
-            className="self-end"
+            className="self-end h-auto"
             alt=""
             width={400}
             height={600}
