@@ -12,7 +12,7 @@ import { useTranslations } from "next-intl";
 const LearningMethods = () => {
   const t = useTranslations("Learning");
   return (
-    <div className="snap-center max-w-screen-2xl h-full md:h-[80vh] flex items-center  w-full  my-10">
+    <div className="md:snap-center max-w-screen-2xl h-full md:h-[80vh] flex items-center  w-full  my-10">
       <div className="flex flex-col md:flex-row h-full md:h-min md:gap-12">
         <div className="bg-gradient-to-l md:w-1/2 from-amber-300 h-min  to-amber-300/70 p-10 pb-0 md:rounded-[3rem]">
           <Image src="/tr3.png" priority alt="" height={600} width={600} />

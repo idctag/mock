@@ -20,7 +20,7 @@ export default function Home() {
           <Features />
         </Reveal>
       </AnimatedBackground>
-      <Reveal classname="flex justify-center">
+      <Reveal classname="flex w-full justify-center">
         <LogoTicker />
       </Reveal>
       <Reveal>

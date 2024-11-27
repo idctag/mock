@@ -40,7 +40,7 @@ export default withMT({
   },
   plugins: [
     addVariablesForColors,
-    function({ matchUtilities, theme }: any) {
+    function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
           "bg-grid": (value: any) => ({
